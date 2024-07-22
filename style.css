@@ -1,54 +1,73 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
 
-#films-list {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-#films-list li {
-    margin-bottom: 10px;
-    padding: 10px;
+  }
+  
+  li {
+    margin-bottom: 20px;
+  }
+  
+  .film {
+    padding: 20px;
     border-bottom: 1px solid #ccc;
-}
-
-#films-list li:hover {
+  }
+  
+  .film:hover {
     background-color: #f0f0f0;
-    cursor: pointer;
-}
-
-.movie-details {
-    margin-left: 20px;
-}
-
-.movie-details img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-.movie-details h2 {
+  }
+  
+  .film img {
+    width: 100px;
+    height: 150px;
+    margin-right: 20px;
+  }
+  
+  .film h2 {
+    font-size: 18px;
     margin-top: 0;
-}
-
-.movie-details p {
-    margin-bottom: 10px;
-}
-
-.buy-ticket-button {
+  }
+  
+  .available-tickets {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .buy-ticket-button,
+  .delete-button {
     background-color: #4CAF50;
-    color: #ffffff;
+    color: #fff;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    
-}
-
-.buy-ticket-button:hover {
+  }
+  
+  .buy-ticket-button:hover,
+  .delete-button:hover {
     background-color: #3e8e41;
-}
-
+  }
+  
+  .movie-details {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+  }
